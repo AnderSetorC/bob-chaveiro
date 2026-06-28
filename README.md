@@ -79,7 +79,7 @@ Abre `http://localhost:8000` no browser.
 | Pacote | Preço | Inclui |
 |---|---|---|
 | **Pacote 1** | R$250 à vista | Landing page otimizada + SEO + hospedagem grátis + 30 dias suporte |
-| **Pacote 2** | R$500 à vista | Tudo do Pacote 1 + Google Meu Negócio + Instagram + Facebook + Bio digital + 1ª campanha Google Ads + 1ª campanha Meta Ads + 30 dias suporte |
+| **Pacote 2** | R$500 à vista | Tudo do Pacote 1 + Google Meu Negócio + Instagram e Facebook prontos pra anúncios + 06 artes pra postar + Bio digital + 1ª campanha Google Ads + 1ª campanha Meta Ads + 30 dias suporte |
 
 Domínio `.com.br` é opcional (R$40/ano no registro.br).
 
