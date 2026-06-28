@@ -32,6 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/team-bob.webp" type="image/webp" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -234,7 +235,10 @@
       <!-- Reforço visual: chaveiro desanimado -->
       <div class="pain-visual reveal">
         <figure class="pain-visual__figure">
-          <img src="assets/img/chaveiro-dor.png" alt="Chaveiro sozinho, sem clientes, com chaves e fechaduras ao redor — imagem ilustrativa" loading="lazy" />
+          <picture>
+            <source srcset="assets/img/chaveiro-dor.webp" type="image/webp" />
+            <img src="assets/img/chaveiro-dor.png" alt="Chaveiro sozinho, sem clientes, com chaves e fechaduras ao redor — imagem ilustrativa" loading="lazy" width="700" height="467" />
+          </picture>
           <figcaption class="pain-visual__tag">Imagem ilustrativa</figcaption>
         </figure>
         <div class="pain-visual__text">
@@ -728,7 +732,10 @@
 
       <div class="author-grid">
         <figure class="author-visual reveal">
-          <img src="assets/img/team-bob.png" alt="Anderson Moraes e o agente BOB — imagem ilustrativa" loading="lazy" />
+          <picture>
+            <source srcset="assets/img/team-bob.webp" type="image/webp" />
+            <img src="assets/img/team-bob.png" alt="Anderson Moraes e o agente BOB — imagem ilustrativa" loading="lazy" width="800" height="1067" />
+          </picture>
           <figcaption class="author-visual__tag">Imagem ilustrativa</figcaption>
         </figure>
 

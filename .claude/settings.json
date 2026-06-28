@@ -3,7 +3,15 @@
     "allow": [
       "Bash(node mobile-check.js)",
       "Bash(node mobile-nav.js)",
-      "Bash(node check-img.js)"
+      "Bash(node check-img.js)",
+      "Bash(where.exe magick *)",
+      "Bash(where.exe convert *)",
+      "Bash(npm install *)",
+      "Bash(node optimize.js)",
+      "Bash(mv team-bob-opt.png team-bob.png)",
+      "Bash(mv chaveiro-dor-opt.png chaveiro-dor.png)",
+      "Bash(node check-webp.js)",
+      "Bash(python -c ' *)"
     ]
   }
 }
