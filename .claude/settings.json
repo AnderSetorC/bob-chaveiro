@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node mobile-check.js)",
+      "Bash(node mobile-nav.js)"
+    ]
+  }
+}

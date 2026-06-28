@@ -1858,20 +1858,33 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.2; font-weight: 800; }
   :root { --header-h: 64px; --urgency-h: 36px; }
   .container { padding: 0 16px; }
   .nav {
-    position: fixed;
-    top: calc(var(--urgency-h) + var(--header-h));
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 10, 0.98);
-    backdrop-filter: blur(20px);
+    background: #0A0A0A;
     flex-direction: column;
     gap: 0;
     padding: 16px;
     border-bottom: 1px solid var(--border);
+    border-top: 1px solid var(--border);
     transform: translateY(-110%);
-    transition: transform 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s, opacity 0.3s, visibility 0s 0.3s;
+    z-index: 91;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
   }
-  .nav-open .nav { transform: translateY(0); }
+  .nav-open .nav {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.3s, opacity 0.3s, visibility 0s;
+  }
+  .nav-open .header {
+    background: #0A0A0A;
+    border-bottom-color: var(--border);
+  }
   .nav a { padding: 14px 0; border-bottom: 1px solid var(--border); }
   .nav a:last-child { border-bottom: none; }
   .nav-toggle { display: flex; }
@@ -1889,8 +1902,18 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.2; font-weight: 800; }
   .hero__cta-group .btn { width: 100%; justify-content: center; }
   .hero__trust { gap: 16px; }
   .hero__trust-divider { display: none; }
-  .hero__floating-msg--1 { left: 0; top: 0; }
-  .hero__floating-msg--2 { right: 0; bottom: 10%; }
+
+  /* No mobile, esconde as floating msgs (o toast live já cumpre esse papel)
+     e força o hero a empilhar: TEXTO primeiro, phone mockup depois */
+  .hero__floating-msg { display: none; }
+  .hero__visual {
+    order: 1; /* depois do conteúdo */
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .hero__content { order: 0; } /* primeiro */
+  .phone-mockup { max-width: 280px; }
+  .phone-mockup__screen { min-height: 420px; padding: 44px 16px 20px; }
 
   .urgency-bar__inner { font-size: 11px; }
   .urgency-bar__inner span:not(.urgency-bar__pulse) {
