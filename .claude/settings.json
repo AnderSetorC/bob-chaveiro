@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(node mobile-check.js)",
-      "Bash(node mobile-nav.js)"
+      "Bash(node mobile-nav.js)",
+      "Bash(node check-img.js)"
     ]
   }
 }

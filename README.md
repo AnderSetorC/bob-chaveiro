@@ -21,7 +21,7 @@ landing-page/
 ├── js/
 │   └── main.js             # Ticker, contadores, chat animado, toasts
 ├── assets/
-│   ├── img/                # (vazio — placeholders no HTML)
+│   ├── img/                # Imagens da landing (chaveiro-dor.png, team-bob.png)
 │   └── video/              # (vazio — pra vídeos futuros)
 └── README.md
 ```

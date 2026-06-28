@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#1c1c1c"/>
+    </linearGradient>
+    <linearGradient id="gold2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD60A"/>
+      <stop offset="100%" stop-color="#E5BF00"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="500" fill="url(#bg2)"/>
+  <!-- Glow diagonal -->
+  <line x1="0" y1="60" x2="200" y2="0" stroke="url(#gold2)" stroke-width="2" opacity="0.6"/>
+  <line x1="500" y1="0" x2="700" y2="60" stroke="url(#gold2)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Pessoa 1 (esquerda) -->
+  <g transform="translate(220, 280)" opacity="0.5">
+    <circle cx="0" cy="-90" r="55" fill="#2a2a2a"/>
+    <rect x="-12" y="-50" width="24" height="14" fill="#0a0a0a" rx="2"/>
+    <path d="M-80,10 Q-80,-30 -45,-30 L45,-30 Q80,-30 80,10 L80,120 L-80,120 Z" fill="#2a2a2a"/>
+  </g>
+
+  <!-- Pessoa 2 (direita - robô com brilho amarelo) -->
+  <g transform="translate(480, 280)" opacity="0.6">
+    <circle cx="0" cy="-90" r="55" fill="#3a3a3a" stroke="#FFD60A" stroke-width="2"/>
+    <rect x="-25" y="-92" width="14" height="6" fill="#FFD60A"/>
+    <rect x="11" y="-92" width="14" height="6" fill="#FFD60A"/>
+    <circle cx="-12" cy="-78" r="6" fill="#FFD60A"/>
+    <circle cx="12" cy="-78" r="6" fill="#FFD60A"/>
+    <path d="M-80,10 Q-80,-30 -45,-30 L45,-30 Q80,-30 80,10 L80,120 L-80,120 Z" fill="#2a2a2a"/>
+    <!-- Glow -->
+    <circle cx="0" cy="-78" r="40" fill="#FFD60A" opacity="0.1"/>
+  </g>
+
+  <!-- Texto placeholder -->
+  <text x="350" y="50" text-anchor="middle" fill="#FFD60A" font-family="Inter, sans-serif" font-size="16" font-weight="800" letter-spacing="2">IMAGEM ILLUSTRATIVA</text>
+  <text x="350" y="470" text-anchor="middle" fill="#666" font-family="Inter, sans-serif" font-size="12">Substitua por: assets/img/team-bob.png</text>
+</svg>

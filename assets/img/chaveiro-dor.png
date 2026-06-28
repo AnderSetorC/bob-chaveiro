@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFD60A" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#FFD60A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFD60A" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <!-- Glow horizontal -->
+  <rect x="0" y="80" width="600" height="2" fill="url(#gold)" opacity="0.6"/>
+  <!-- Silhueta chaveiro -->
+  <g transform="translate(300, 220)" opacity="0.4">
+    <circle cx="0" cy="-50" r="42" fill="#2a2a2a"/>
+    <path d="M-65,10 Q-65,-20 -40,-20 L40,-20 Q65,-20 65,10 L65,90 L-65,90 Z" fill="#2a2a2a"/>
+  </g>
+  <!-- Chaves na mesa -->
+  <g opacity="0.5">
+    <circle cx="120" cy="320" r="14" fill="none" stroke="#3a3a3a" stroke-width="3"/>
+    <circle cx="160" cy="330" r="10" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+    <circle cx="90" cy="335" r="8" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+    <rect x="490" y="310" width="22" height="40" rx="4" fill="none" stroke="#FFD60A" stroke-width="2" opacity="0.6"/>
+    <rect x="480" y="320" width="14" height="6" fill="#FFD60A" opacity="0.4"/>
+  </g>
+  <!-- Texto placeholder -->
+  <text x="300" y="40" text-anchor="middle" fill="#666" font-family="Inter, sans-serif" font-size="14" font-weight="600" letter-spacing="2">IMAGEM ILLUSTRATIVA</text>
+  <text x="300" y="380" text-anchor="middle" fill="#444" font-family="Inter, sans-serif" font-size="12">Substitua por: assets/img/chaveiro-dor.png</text>
+</svg>
